@@ -18,7 +18,6 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <HeroSlider />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1a896c]/80 to-[#0f6b52]/60 z-10" />
         <div className="relative z-20 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">Transformando la Seguridad Minera</h1>
           <p className="text-xl md:text-2xl mb-8 opacity-90 animate-fade-in-delay">
