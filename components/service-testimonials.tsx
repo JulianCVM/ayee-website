@@ -73,7 +73,7 @@ export default function ServiceTestimonials() {
               className="group hover:shadow-xl transition-all duration-300 relative overflow-hidden"
             >
               <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                <Quote className="h-16 w-16 text-blue-600" />
+                <Quote className="h-16 w-16 text-black-600" />
               </div>
 
               <CardContent className="p-8">
@@ -88,10 +88,10 @@ export default function ServiceTestimonials() {
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">
                       <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                      <Badge className="bg-blue-100 text-blue-800 text-xs">{testimonial.service}</Badge>
+                      <Badge className="bg-[#f7e6e9] text-[#661A26] text-xs">{testimonial.service}</Badge>
                     </div>
                     <p className="text-sm text-gray-600 mb-1">{testimonial.position}</p>
-                    <p className="text-sm font-medium text-blue-600">{testimonial.company}</p>
+                    <p className="text-sm font-medium text-[#661A26]">{testimonial.company}</p>
 
                     {/* Rating */}
                     <div className="flex items-center mt-2">
@@ -113,27 +113,28 @@ export default function ServiceTestimonials() {
         </div>
 
         {/* Stats */}
-        <div className="mt-16 bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8">
+        <div className="mt-16 bg-[#f7f2f3] rounded-2xl p-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-blue-600 mb-2">98%</div>
-              <div className="text-sm text-gray-600">Satisfacción del Cliente</div>
+              <div className="text-3xl font-bold text-[#661A26] mb-2">98%</div>
+                <div className="text-sm text-gray-700">Satisfacción del Cliente</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-[#1A896C] mb-2">500+</div>
+                  <div className="text-sm text-gray-700">Proyectos Exitosos</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-[#A47740] mb-2">15+</div>
+                  <div className="text-sm text-gray-700">Años de Experiencia</div>
+                </div>
+                  <div>
+                    <div className="text-3xl font-bold text-[#000000] mb-2">24/7</div>
+                    <div className="text-sm text-gray-700">Soporte Técnico</div>
+                  </div>
+              </div>
             </div>
-            <div>
-              <div className="text-3xl font-bold text-green-600 mb-2">500+</div>
-              <div className="text-sm text-gray-600">Proyectos Exitosos</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-yellow-600 mb-2">15+</div>
-              <div className="text-sm text-gray-600">Años de Experiencia</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-purple-600 mb-2">24/7</div>
-              <div className="text-sm text-gray-600">Soporte Técnico</div>
-            </div>
+
           </div>
-        </div>
-      </div>
     </section>
   )
 }

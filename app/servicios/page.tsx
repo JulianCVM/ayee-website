@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { GraduationCap, Shield, Wrench, FileText, CheckCircle, Star, Phone, Calculator } from "lucide-react"
+import { CheckCircle, Star, Phone, Calculator } from "lucide-react"
 import Image from "next/image"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
@@ -15,7 +15,6 @@ import ServiceFAQ from "@/components/service-faq"
 const services = [
   {
     id: "capacitaciones",
-    icon: GraduationCap,
     title: "Capacitaciones en Seguridad Minera",
     shortDescription: "Programas especializados en seguridad minera y protocolos de emergencia.",
     fullDescription:
@@ -40,7 +39,6 @@ const services = [
   },
   {
     id: "epp",
-    icon: Shield,
     title: "Suministro de Equipos de Protección Personal",
     shortDescription: "Equipos de protección personal certificados para la industria minera.",
     fullDescription:
@@ -65,7 +63,6 @@ const services = [
   },
   {
     id: "asesorias",
-    icon: Wrench,
     title: "Asesorías Técnicas Especializadas",
     shortDescription: "Consultoría especializada en procesos mineros y gestión de riesgos.",
     fullDescription:
@@ -90,7 +87,6 @@ const services = [
   },
   {
     id: "consultoria",
-    icon: FileText,
     title: "Consultoría Minera Integral",
     shortDescription: "Servicios integrales de consultoría para proyectos mineros sostenibles.",
     fullDescription:
@@ -128,7 +124,7 @@ export default function ServicesPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-12 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="pt-24 pb-12 bg-[#1A896C] text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Nuestros Servicios</h1>
@@ -153,7 +149,7 @@ export default function ServicesPage() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <Badge className="mb-4 bg-blue-100 text-blue-800">Servicios Especializados</Badge>
+            <Badge className="mb-4 bg-[#F1E09E] text-[#A47740]">Servicios Especializados</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Transformamos la Industria Minera</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Cada servicio está diseñado para abordar los desafíos específicos de la minería moderna
@@ -162,7 +158,7 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {services.map((service, index) => {
-              const IconComponent = service.icon
+
               return (
                 <Card key={service.id} className="group hover:shadow-xl transition-all duration-300">
                   <div className="relative overflow-hidden">
@@ -174,14 +170,12 @@ export default function ServicesPage() {
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute top-4 left-4">
-                      <div className="bg-white/90 p-3 rounded-full">
-                        <IconComponent className="h-6 w-6 text-blue-600" />
-                      </div>
+
                     </div>
                   </div>
 
                   <CardHeader>
-                    <CardTitle className="text-xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                    <CardTitle className="text-xl font-semibold text-gray-900 group-hover:text-[#661A26] transition-colors">
                       {service.title}
                     </CardTitle>
                     <CardDescription className="text-gray-600">{service.shortDescription}</CardDescription>
@@ -198,7 +192,7 @@ export default function ServicesPage() {
                         <span className="font-medium text-green-600">{service.pricing}</span>
                       </div>
                       <Button
-                        className="w-full bg-blue-600 hover:bg-blue-700"
+                        className="w-full bg-[#1FAE69] hover:bg-[#136D41]"
                         onClick={() => document.getElementById("cotizador")?.scrollIntoView({ behavior: "smooth" })}
                       >
                         <Calculator className="mr-2 h-4 w-4" />
@@ -233,15 +227,11 @@ export default function ServicesPage() {
             </TabsList>
 
             {services.map((service) => {
-              const IconComponent = service.icon
               return (
                 <TabsContent key={service.id} value={service.id}>
                   <div className="grid lg:grid-cols-2 gap-12 items-start">
                     <div>
                       <div className="flex items-center mb-6">
-                        <div className="bg-blue-100 p-4 rounded-full mr-4">
-                          <IconComponent className="h-8 w-8 text-blue-600" />
-                        </div>
                         <div>
                           <h3 className="text-2xl font-bold text-gray-900">{service.title}</h3>
                           <p className="text-gray-600">{service.shortDescription}</p>
@@ -251,9 +241,9 @@ export default function ServicesPage() {
                       <p className="text-gray-700 mb-6 leading-relaxed">{service.fullDescription}</p>
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                        <div className="bg-blue-50 p-6 rounded-lg">
+                        <div className="bg-[#f7e6e9] p-6 rounded-lg">
                           <h4 className="font-semibold text-gray-900 mb-2">Duración</h4>
-                          <p className="text-blue-600 font-medium">{service.duration}</p>
+                          <p className="text-[#661A26] font-medium">{service.duration}</p>
                         </div>
                         <div className="bg-green-50 p-6 rounded-lg">
                           <h4 className="font-semibold text-gray-900 mb-2">Inversión</h4>
@@ -264,7 +254,7 @@ export default function ServicesPage() {
                       <div className="flex flex-col sm:flex-row gap-4">
                         <Button
                           size="lg"
-                          className="bg-blue-600 hover:bg-blue-700"
+                          className="bg-[#1FAE69] hover:bg-[#136D41]"
                           onClick={() => document.getElementById("cotizador")?.scrollIntoView({ behavior: "smooth" })}
                         >
                           <Calculator className="mr-2 h-5 w-5" />
@@ -342,14 +332,14 @@ export default function ServicesPage() {
       <ServiceFAQ />
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="py-20 bg-[#1A896C] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">¿Listo para Transformar tu Operación Minera?</h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
             Nuestro equipo de expertos está listo para ayudarte a implementar las mejores prácticas de seguridad
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3">
+            <Button size="lg" className="bg-white text-black hover:bg-gray-100 px-8 py-3">
               <Phone className="mr-2 h-5 w-5" />
               Llamar Ahora
             </Button>
