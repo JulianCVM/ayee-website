@@ -195,7 +195,7 @@ export default function ContactPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-blue-900 via-blue-800 to-green-700 text-white relative overflow-hidden">
+      <section className="pt-24 pb-16 bg-[#1A896C] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-black/30" />
         <div className="absolute inset-0">
           <Image
@@ -213,7 +213,7 @@ export default function ContactPage() {
               Estamos Aquí para Ayudarte
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Hablemos de tu <span className="text-green-300">Proyecto</span>
+              Hablemos de tu <span className="text-[#661A26]">Proyecto</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
               Múltiples canales, respuesta garantizada
@@ -789,21 +789,21 @@ export default function ContactPage() {
       <ContactTestimonials />
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-green-600 text-white">
+      <section className="py-20 bg-[#1A896C] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">¿Listo para Comenzar tu Proyecto?</h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
             No esperes más. Nuestro equipo está preparado para ayudarte a transformar tu visión en realidad.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3">
+            <Button size="lg" className="bg-white text-[#661A26] hover:bg-gray-100 px-8 py-3">
               <Phone className="mr-2 h-5 w-5" />
               Llamar Ahora
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 bg-transparent"
+              className="border-white text-white hover:bg-white hover:text-[#661A26] px-8 py-3 bg-transparent"
             >
               <MessageCircle className="mr-2 h-5 w-5" />
               WhatsApp

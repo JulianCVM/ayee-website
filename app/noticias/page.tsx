@@ -538,7 +538,7 @@ export default function NewsPage() {
       <NewsletterSignup />
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-green-600 to-yellow-600 text-white">
+      <section className="py-20 bg-[#661A26] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">¿Quieres Saber Más o Contarnos tu Historia?</h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
@@ -547,7 +547,7 @@ export default function NewsPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contacto">
-              <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3">
+              <Button size="lg" className="bg-[#1A896C] text-white hover:bg-gray-100 px-8 py-3">
                 Contactar Redacción
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -555,7 +555,7 @@ export default function NewsPage() {
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-green-600 px-8 py-3 bg-transparent"
+              className="border-white text-white hover:bg-white hover:text-[#1A896C] px-8 py-3 bg-transparent"
             >
               Proponer Historia
             </Button>
