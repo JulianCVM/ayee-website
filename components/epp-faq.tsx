@@ -81,7 +81,7 @@ export default function EPPFAQ() {
               <Accordion type="single" collapsible className="w-full">
                 {faqs.map((faq, index) => (
                   <AccordionItem key={index} value={`item-${index}`}>
-                    <AccordionTrigger className="text-left font-medium text-gray-900 hover:text-blue-600">
+                    <AccordionTrigger className="text-left font-medium text-gray-900 hover:text-[#661A26]">
                       <div className="flex items-center gap-3">
                         {faq.icon && <faq.icon className="h-5 w-5 text-blue-600" />}
                         {faq.question}
