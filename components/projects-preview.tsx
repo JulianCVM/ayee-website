@@ -115,15 +115,6 @@ export default function ProjectsPreview() {
             </Card>
           ))}
         </div>
-
-        <div className="text-center mt-12">
-          <Link href="/proyectos">
-            <Button size="lg" className="bg-[#1a896c] hover:bg-[#0f6b52]">
-              Ver Todos los Proyectos
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </Link>
-        </div>
       </div>
     </section>
   )

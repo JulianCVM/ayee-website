@@ -13,7 +13,6 @@ export default function Header() {
   const navigation = [
     { name: "Inicio", href: "/" },
     { name: "Nosotros", href: "/nosotros" },
-    { name: "Proyectos", href: "/proyectos" },
     { name: "Servicios", href: "/servicios" },
     { name: "Noticias", href: "/noticias" },
     { name: "Tienda EPP", href: "/tienda-epp" },
