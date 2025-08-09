@@ -131,7 +131,7 @@ export default function ProductCard({ product, onAddToCart }: ProductCardProps) 
           {/* Action Buttons */}
           <div className="flex gap-2">
             <a href={generateWhatsAppLink()} target="_blank" rel="noopener noreferrer" className="flex-1">
-              <Button className="w-full bg-[#25D366] hover:bg-[#20BA5A] text-white">
+              <Button className="w-full bg-[#1FAE69] hover:bg-[#20BA5A] text-white">
                 <MessageCircle className="mr-2 h-4 w-4" />
                 Cotizar
               </Button>
