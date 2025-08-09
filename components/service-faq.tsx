@@ -51,7 +51,7 @@ export default function ServiceFAQ() {
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <Badge className="mb-4 bg-purple-100 text-purple-800">Preguntas Frecuentes</Badge>
+          <Badge className="mb-4 bg-[#D2D3D5] text-[#000000]">Preguntas Frecuentes</Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Resolvemos tus Dudas</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Encuentra respuestas a las preguntas más comunes sobre nuestros servicios
@@ -91,13 +91,13 @@ export default function ServiceFAQ() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:+573001234567"
-                className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 bg-[#1A896C] text-white rounded-lg hover:bg-[#136D41] transition-colors"
               >
                 Llamar Ahora
               </a>
               <a
                 href="mailto:info@ayee.com.co"
-                className="inline-flex items-center justify-center px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 border border-[#661A26] text-[#661A26] rounded-lg hover:bg-[#F7E6E9] transition-colors"
               >
                 Enviar Email
               </a>

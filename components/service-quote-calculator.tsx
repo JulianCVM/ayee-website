@@ -254,7 +254,7 @@ export default function ServiceQuoteCalculator() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="flex-1 bg-blue-600 hover:bg-blue-700">
+                <Button className="flex-1 bg-[#1FAE69] hover:bg-[#136D41]">
                   <Send className="mr-2 h-4 w-4" />
                   Enviar Cotización
                 </Button>
@@ -284,15 +284,15 @@ export default function ServiceQuoteCalculator() {
       <CardHeader>
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center">
-            <div className="bg-blue-100 p-3 rounded-full mr-4">
-              <Calculator className="h-6 w-6 text-blue-600" />
+            <div className="bg-gray-100 p-3 rounded-full mr-4">
+              <Calculator className="h-6 w-6 text-" />
             </div>
             <div>
               <CardTitle className="text-2xl font-bold text-gray-900">Cotizador Inteligente</CardTitle>
               <CardDescription>Paso {currentStep} de 4 - Obtén tu cotización personalizada</CardDescription>
             </div>
           </div>
-          <Badge variant="outline" className="bg-blue-50 text-blue-700">
+          <Badge variant="outline" className="bg-[#F1E09E] text-[#A47740]">
             {Math.round((currentStep / 4) * 100)}% Completado
           </Badge>
         </div>
@@ -300,7 +300,7 @@ export default function ServiceQuoteCalculator() {
         {/* Progress Bar */}
         <div className="w-full bg-gray-200 rounded-full h-2">
           <div
-            className="bg-blue-600 h-2 rounded-full transition-all duration-300"
+            className="bg-[#A47740] h-2 rounded-full transition-all duration-300"
             style={{ width: `${(currentStep / 4) * 100}%` }}
           />
         </div>
@@ -320,7 +320,7 @@ export default function ServiceQuoteCalculator() {
                 <Card
                   key={service.id}
                   className={`cursor-pointer transition-all duration-200 hover:shadow-md ${
-                    quoteData.service === service.id ? "ring-2 ring-blue-500 bg-blue-50" : "hover:bg-gray-50"
+                    quoteData.service === service.id ? "ring-2 ring-[#A47740] bg-[#F3E6D3]" : "hover:bg-gray-50"
                   }`}
                   onClick={() => handleServiceChange(service.id)}
                 >
@@ -540,7 +540,7 @@ export default function ServiceQuoteCalculator() {
 
           <Button
             onClick={handleNext}
-            className="bg-blue-600 hover:bg-blue-700"
+            className="bg-[#1FAE69] hover:bg-[#136D41]"
             disabled={
               (currentStep === 1 && !quoteData.service) ||
               (currentStep === 2 &&
