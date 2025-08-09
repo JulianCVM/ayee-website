@@ -103,7 +103,7 @@ export default function EPPFAQ() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:+573001234567"
-                className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 bg-[#661A26] text-white rounded-lg hover:bg-[#4e131d] transition-colors"
               >
                 <Phone className="mr-2 h-4 w-4" />
                 Llamar Ahora
@@ -112,13 +112,13 @@ export default function EPPFAQ() {
                 href="https://wa.me/573001234567"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 bg-[#1A896C] text-white rounded-lg hover:bg-[#156f58] transition-colors"
               >
                 WhatsApp Business
               </a>
               <a
                 href="mailto:epp@ayee.com.co"
-                className="inline-flex items-center justify-center px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 border border-[#661A26] text-[#661A26] rounded-lg hover:bg-[#f2e8ea] transition-colors"
               >
                 Enviar Email
               </a>

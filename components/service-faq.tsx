@@ -62,8 +62,8 @@ export default function ServiceFAQ() {
           <Card className="shadow-lg">
             <CardHeader className="text-center">
               <div className="flex justify-center mb-4">
-                <div className="bg-purple-100 p-4 rounded-full">
-                  <HelpCircle className="h-8 w-8 text-purple-600" />
+                <div className="bg-green-100 p-4 rounded-full">
+                  <HelpCircle className="h-8 w-8 text-[#1A896C]" />
                 </div>
               </div>
               <CardTitle className="text-2xl font-bold text-gray-900">Preguntas Frecuentes</CardTitle>

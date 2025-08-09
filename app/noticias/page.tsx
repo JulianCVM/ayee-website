@@ -155,7 +155,8 @@ export default function NewsPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-yellow-600 via-green-600 to-green-800 text-white relative overflow-hidden">
+      <section className="pt-24 pb-16 bg-[#1A896C] text-white relative overflow-hidden">
+
         <div className="absolute inset-0 bg-black/20" />
         <div className="absolute inset-0 opacity-10">
           <div className="grid grid-cols-8 gap-2 transform -rotate-12 scale-150">
@@ -169,7 +170,7 @@ export default function NewsPage() {
           <div className="text-center max-w-4xl mx-auto">
             <Badge className="mb-6 bg-white/20 text-white border-white/30 text-lg px-4 py-2">Actualidad AYEE</Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Noticias y <span className="text-yellow-300">Artículos</span>
+              Noticias y <span className="text-[#661A26]">Artículos</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">Historias que transforman territorios</p>
             <p className="text-lg opacity-80 max-w-2xl mx-auto">
@@ -243,7 +244,7 @@ export default function NewsPage() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="flex items-center gap-3 mb-8">
-              <div className="bg-yellow-500 rounded-full p-2">
+              <div className="bg-[#1A896C] rounded-full p-2">
                 <BookOpen className="h-5 w-5 text-white" />
               </div>
               <h2 className="text-2xl font-bold text-gray-900">Artículos Destacados</h2>
@@ -264,7 +265,8 @@ export default function NewsPage() {
                       className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                    <Badge className="absolute top-4 left-4 bg-yellow-500 text-white">Destacado</Badge>
+                    <Badge className="absolute top-4 left-4 bg-[#661A26] text-white">Destacado</Badge>
+
                     <Badge className="absolute top-4 right-4 bg-white/90 text-gray-700">{article.category}</Badge>
                   </div>
 

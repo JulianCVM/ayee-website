@@ -112,29 +112,21 @@ export default function ServiceTestimonials() {
           ))}
         </div>
 
-        {/* Stats */}
-        <div className="mt-16 bg-[#f7f2f3] rounded-2xl p-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-3xl font-bold text-[#661A26] mb-2">98%</div>
-                <div className="text-sm text-gray-700">Satisfacción del Cliente</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-[#1A896C] mb-2">500+</div>
-                  <div className="text-sm text-gray-700">Proyectos Exitosos</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-[#A47740] mb-2">15+</div>
-                  <div className="text-sm text-gray-700">Años de Experiencia</div>
-                </div>
-                  <div>
-                    <div className="text-3xl font-bold text-[#000000] mb-2">24/7</div>
-                    <div className="text-sm text-gray-700">Soporte Técnico</div>
-                  </div>
-              </div>
-            </div>
+          {/* Stats */}
+<div className="mt-16 bg-[#f7f2f3] rounded-2xl p-12">
+  <div className="flex justify-center items-center gap-20 text-center">
+    <div>
+      <div className="text-6xl font-bold text-[#661A26] mb-4">98%</div>
+      <div className="text-xl text-gray-700">Satisfacción del Cliente</div>
+    </div>
+    <div>
+      <div className="text-6xl font-bold text-[#000000] mb-4">24/7</div>
+      <div className="text-xl text-gray-700">Soporte Técnico</div>
+    </div>
+  </div>
+</div>
 
-          </div>
+        </div>
     </section>
   )
 }
