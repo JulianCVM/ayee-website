@@ -16,13 +16,13 @@ import EPPTestimonials from "@/components/epp-testimonials"
 import EPPFAQ from "@/components/epp-faq"
 
 const categories = [
-  { id: "all", name: "Todos los Productos", icon: Shield, color: "bg-blue-500" },
+  { id: "all", name: "Todos los Productos", icon: Shield, color: "bg-green-500" },
   { id: "auditiva", name: "Protección Auditiva", icon: Headphones, color: "bg-green-500" },
-  { id: "visual", name: "Protección Visual", icon: Glasses, color: "bg-yellow-500" },
-  { id: "respiratoria", name: "Protección Respiratoria", icon: Shield, color: "bg-red-500" },
-  { id: "cabeza", name: "Protección de Cabeza", icon: HardHat, color: "bg-orange-500" },
-  { id: "corporal", name: "Protección Corporal", icon: Shirt, color: "bg-purple-500" },
-  { id: "alturas", name: "Trabajo en Alturas", icon: Shield, color: "bg-indigo-500" },
+  { id: "visual", name: "Protección Visual", icon: Glasses, color: "bg-green-500" },
+  { id: "respiratoria", name: "Protección Respiratoria", icon: Shield, color: "bg-green-500" },
+  { id: "cabeza", name: "Protección de Cabeza", icon: HardHat, color: "bg-green-500" },
+  { id: "corporal", name: "Protección Corporal", icon: Shirt, color: "bg-green-500" },
+  { id: "alturas", name: "Trabajo en Alturas", icon: Shield, color: "bg-green-500" },
 ]
 
 const products = [
@@ -307,7 +307,7 @@ export default function TiendaEPPPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-blue-800 via-gray-700 to-orange-600 text-white relative overflow-hidden">
+      <section className="pt-24 pb-16 bg-gradient-to-br via-gray-700 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-0">
           <Image
@@ -321,11 +321,11 @@ export default function TiendaEPPPage() {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <Badge className="mb-6 bg-orange-500/20 text-orange-200 border-orange-300/30 text-lg px-4 py-2">
+            <Badge className="mb-6 bg-[#F1E09E] text-[#A47740] border-orange-300/30 text-lg px-4 py-2">
               Tienda Especializada
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Tienda <span className="text-orange-300">EPP</span>
+              Tienda <span className="text-[#661A26]">EPP</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
               Protección certificada para cada necesidad
@@ -359,7 +359,7 @@ export default function TiendaEPPPage() {
       </section>
 
       {/* Categories Filter Bar */}
-      <section className="py-8 bg-gray-50 sticky top-16 z-40 border-b">
+      <section className="py-8 bg-gray-50 top-16 z-40 border-b">
         <div className="container mx-auto px-4">
           {/* Search and Sort */}
           <div className="flex flex-col lg:flex-row gap-4 items-center mb-6">
@@ -475,17 +475,14 @@ export default function TiendaEPPPage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <EPPTestimonials />
-
       {/* FAQ Section */}
       <EPPFAQ />
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-orange-600 text-white relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-r bg-[#D2D3D5] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-black/20" />
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 ">
             Consulta Disponibilidad y Recibe Asesoría Personalizada
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
@@ -494,7 +491,7 @@ export default function TiendaEPPPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contacto">
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3">
+              <Button size="lg" className="bg-white text-[#000000] hover:bg-gray-100 px-8 py-3">
                 Contactar Asesor
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -502,7 +499,7 @@ export default function TiendaEPPPage() {
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 bg-transparent"
+              className="border-white text-white hover:bg-white hover:text-[#1A896C] px-8 py-3 bg-transparent"
               onClick={() => setCartOpen(true)}
             >
               <ShoppingCart className="mr-2 h-5 w-5" />
