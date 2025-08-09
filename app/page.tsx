@@ -90,9 +90,6 @@ export default function HomePage() {
       {/* Services Preview */}
       <ServicesPreview />
 
-      {/* Projects Preview */}
-      <ProjectsPreview />
-
       {/* News Preview */}
       <NewsPreview />
 
